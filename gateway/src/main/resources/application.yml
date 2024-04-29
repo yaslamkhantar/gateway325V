@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: gateway
+
+  cloud:
+    gateway:
+      mvc:
+        routes:
+
+          - id: route1
+            uri:
+              http://localhost:9000/
+            predicates:
+              - Path=/test/**
+
+
+
+
